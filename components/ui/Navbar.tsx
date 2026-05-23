@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import Image from "next/image"
 import { MagneticButton } from "./MagneticButton"
+import { Logo } from "./Logo"
 
 export function Navbar() {
   const { scrollY } = useScroll()
@@ -51,22 +52,14 @@ export function Navbar() {
       }`}
     >
       <div 
-        className={`absolute inset-0 -z-10 bg-gradient-to-b from-background/95 via-background/50 to-transparent transition-opacity duration-500 pointer-events-none h-[160%] ${
+        className={`absolute inset-0 -z-10 bg-gradient-to-b from-black/95 via-black/50 to-transparent transition-opacity duration-500 pointer-events-none h-[160%] ${
           scrolled ? "opacity-0" : "opacity-100"
         }`}
       />
       <div className="w-full mx-auto px-8 md:px-16 flex items-center justify-between">
         <MagneticButton>
           <div className="relative w-48 h-12 transition-transform duration-300 hover:scale-105 hover:brightness-110">
-            <Image 
-              src="/logo.png" 
-              alt="Rockman Logo" 
-              fill 
-              sizes="192px"
-              className="object-contain" 
-              style={{ filter: "var(--logo-filter)" }}
-              priority
-            />
+            <Logo priority />
           </div>
         </MagneticButton>
 

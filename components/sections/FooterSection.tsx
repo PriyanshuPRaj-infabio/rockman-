@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { Logo } from "../ui/Logo"
 
 export function FooterSection() {
   return (
@@ -18,13 +19,7 @@ export function FooterSection() {
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="relative w-64 h-16 md:w-[400px] md:h-[100px] lg:w-[480px] lg:h-[120px]"
           >
-            <Image
-              src="/logo.png"
-              alt="Rockman Logo"
-              fill
-              className="object-contain"
-              style={{ filter: "var(--logo-filter)" }}
-            />
+            <Logo />
           </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
