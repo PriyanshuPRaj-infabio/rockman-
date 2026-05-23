@@ -33,7 +33,8 @@ export function Navbar() {
   }
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 50) {
+    const threshold = typeof window !== "undefined" ? window.innerHeight * 6.5 : 600
+    if (latest > threshold) {
       setScrolled(true)
     } else {
       setScrolled(false)

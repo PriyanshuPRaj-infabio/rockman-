@@ -24,7 +24,6 @@
 
   --canvas-filter: none;
   --logo-filter: none;
-  --logo-text-filter: none;
 
   --hero-overlay-start: rgba(0, 0, 0, 0.75);
   --hero-overlay-solid: rgba(0, 0, 0, 0.35);
@@ -40,7 +39,6 @@
 
   --canvas-filter: invert(0.93) contrast(1.15) brightness(1.08) hue-rotate(180deg);
   --logo-filter: invert(1);
-  --logo-text-filter: brightness(0.15) contrast(1.5);
 
   --hero-overlay-start: rgba(252, 252, 253, 0.7);
   --hero-overlay-solid: rgba(252, 252, 253, 0.25);
@@ -57,7 +55,6 @@
 
   --canvas-filter: none !important;
   --logo-filter: none !important;
-  --logo-text-filter: none !important;
 
   --hero-overlay-start: rgba(0, 0, 0, 0.75) !important;
   --hero-overlay-solid: rgba(0, 0, 0, 0.35) !important;
