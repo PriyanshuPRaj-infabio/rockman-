@@ -120,3 +120,10 @@ body {
     cursor: none !important;
   }
 }
+
+/* Site credit logo theme swap */
+.gc-logo-dark,  .fab-logo-dark  { display: inline-block; }
+.gc-logo-light, .fab-logo-light { display: none; }
+
+:root.light .gc-logo-dark,  :root.light .fab-logo-dark  { display: none; }
+:root.light .gc-logo-light, :root.light .fab-logo-light { display: inline-block; }

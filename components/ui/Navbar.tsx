@@ -9,7 +9,7 @@ import { Logo } from "./Logo"
 export function Navbar() {
   const { scrollY } = useScroll()
   const [scrolled, setScrolled] = useState(false)
-  const [theme, setTheme] = useState<"light" | "dark">("dark")
+  const [theme, setTheme] = useState<"light" | "dark">("light")
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark"
@@ -18,9 +18,9 @@ export function Navbar() {
       document.documentElement.className = savedTheme
       document.documentElement.style.colorScheme = savedTheme
     } else {
-      setTheme("dark")
-      document.documentElement.className = "dark"
-      document.documentElement.style.colorScheme = "dark"
+      setTheme("light")
+      document.documentElement.className = "light"
+      document.documentElement.style.colorScheme = "light"
     }
   }, [])
 
